@@ -13,6 +13,8 @@ int main() {
     double amount{};
     std::cin >> amount;
 
+    std::cout << "----------------------------------" << std::endl;
+
     const auto doubled_amount = double_amount(amount);
     std::cout << "Montant doublé: " << doubled_amount << std::endl;
     std::cout << "Taxes: " << compute_taxes(doubled_amount) << std::endl;
