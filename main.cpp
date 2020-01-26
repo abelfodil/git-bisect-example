@@ -13,7 +13,9 @@ int main() {
     double amount{};
     std::cin >> amount;
 
-    std::cout << double_amount(amount) << std::endl;
+    const auto doubled_amount = double_amount(amount);
+    std::cout << doubled_amount << std::endl;
+    std::cout << compute_taxes(doubled_amount) << std::endl;
 
     return 0;
 }
