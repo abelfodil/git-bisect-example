@@ -1,7 +1,7 @@
 #include <iostream>
 
 double double_amount(double amount) {
-    return amount * 2;
+    return amount * 3;
 }
 
 double compute_taxes(double amount) {
@@ -14,8 +14,8 @@ int main() {
     std::cin >> amount;
 
     const auto doubled_amount = double_amount(amount);
-    std::cout << doubled_amount << std::endl;
-    std::cout << compute_taxes(doubled_amount) << std::endl;
+    std::cout << "Montant doublé: " << doubled_amount << std::endl;
+    std::cout << "Taxes: " << compute_taxes(doubled_amount) << std::endl;
 
     return 0;
 }
